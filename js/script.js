@@ -250,68 +250,112 @@ function showSlide(n){
 
 }
 
-
-let $result = $('.result')
-let sum = 0;
-
-Plus = () =>{
-	let $prices = $('.current')
-		$prices.each(function() {
-			sum += parseInt($(this).data('val'));   
-		});
-    Result()
-  console.log(parseInt($prices.text()), sum)   
+result = () => {
+  let result = 0
+  allPrices.each(function() {
+  result += +($(this).html());  
+        console.log(result + "result") 
+  })
+  $('.result').html(result)
 }
 
-
-Minus = () =>{
-  let $prices = $('.current[data-val]')
-  if(sum>=27 && parseInt($prices.text())>=0){
-    $prices.each(function() {
-      sum -= parseInt($(this).data('val'));
-    });
-  }
-  Result()
-  console.log(parseInt($prices.text()) + "minus" ) 
-}
-
-Result = () =>{
-    $result.text(sum);
-    console.log(sum+" ---result") 
-}
+let allPrices = $('.priceCart')
 
 $('.plus').click(function(){
-	let $input=$(this).parent().find('input')
-	let count = parseInt($input.val())+1
-		count = count<1 ? 0 : count
-		$input.val(count).change()
-		$('.priceCart').removeClass('current')
-		$(this).parent().parent().find('.priceCart').addClass('current')
-		let priceAttr = $('.current').html(count*27 + " грн").attr('data-val', count*27)
-    let priceAttrNumber = parseInt(priceAttr.html())
-    Plus()
-    console.log(priceAttrNumber+" +AttrNumber") 		
+let $input=$(this).parent().find('input')
+let count = parseInt($input.val())+1
+   count = count<1 ? 1 : count
+   $input.val(count).change()
+let $price =$(this).parent().parent().find('.priceCart')
+let prices = +$price.html()+27
+    prices = prices<27 ? 27 : prices
+    $price.html(prices)
+let summa = 0;
+    allPrices.each(function() {
+        summa += +($(this).html());  
+        console.log(summa + "plus") 
+    });
+    result()
+   
 })
 
 $('.minus').click(function(){
-	let $input=$(this).parent().find('input')
-	let count = parseInt($input.val())-1
-		  count = count<1 ? 0 : count
-		  $input.val(count).change()
+let $input=$(this).parent().find('input')
+let count = parseInt($input.val())-1
+    count = count<1 ? 1 : count
+    $input.val(count).change()
+let $price =$(this).parent().parent().find('.priceCart')
+let prices = +$price.html()-27
+    prices = prices<27 ? 27 : prices
+    $price.html(prices)
+let summa = 0;
+    allPrices.each(function() {
+         summa -= +($(this).html());  
+         console.log(summa + "minus") 
+    });
+    result()
+})
+// let $result = $('.result')
+// let sum = 0;
 
-		  $('.priceCart').removeClass('current')
-		  $(this).parent().parent().find('.priceCart').addClass('current')
-	let priceAttr =	$('.current').html(count*27 + " грн").attr('data-val', count*27)
-  let priceAttrNumber = parseInt(priceAttr.html())
-    if(priceAttrNumber>=0 && count>=0){
-      Minus()
-      console.log(priceAttrNumber+" -AttrNumber") 
-    }else{
-      console.log(priceAttrNumber+" -AttrNumber") 
-    }
+// Plus = () =>{
+// 	let $prices = $('.current')
+// 		$prices.each(function() {
+// 			sum += parseInt($(this).data('val'));   
+// 		});
+//     Result()
+//   console.log(parseInt($prices.text()), sum)   
+// }
+
+
+// Minus = () =>{
+//   let $prices = $('.current[data-val]')
+//   if(sum>=27 && parseInt($prices.text())>=0){
+//     $prices.each(function() {
+//       sum -= parseInt($(this).data('val'));
+//     });
+//   }
+//   Result()
+//   console.log(parseInt($prices.text()) + "minus" ) 
+// }
+
+// Result = () =>{
+//     $result.text(sum);
+//     console.log(sum+" ---result") 
+// }
+
+// $('.plus').click(function(){
+// 	let $input=$(this).parent().find('input')
+// 	let count = parseInt($input.val())+1
+// 		count = count<1 ? 0 : count
+// 		$input.val(count).change()
+// 		$('.priceCart').removeClass('current')
+// 		$(this).parent().parent().find('.priceCart').addClass('current')
+// 		let priceAttr = $('.current').html(count*27 + " грн").attr('data-val', count*27)
+//     let priceAttrNumber = parseInt(priceAttr.html())
+//     Plus()
+//     console.log(priceAttrNumber+" +AttrNumber") 		
+// })
+
+// $('.minus').click(function(){
+// 	let $input=$(this).parent().find('input')
+// 	let count = parseInt($input.val())-1
+// 		  count = count<1 ? 0 : count
+// 		  $input.val(count).change()
+
+// 		  $('.priceCart').removeClass('current')
+// 		  $(this).parent().parent().find('.priceCart').addClass('current')
+// 	let priceAttr =	$('.current').html(count*27 + " грн").attr('data-val', count*27)
+//   let priceAttrNumber = parseInt(priceAttr.html())
+//     if(priceAttrNumber>=0 && count>=0){
+//       Minus()
+//       console.log(priceAttrNumber+" -AttrNumber") 
+//     }else{
+//       console.log(priceAttrNumber+" -AttrNumber") 
+//     }
     
    
-})
+// })
 
 
 			
