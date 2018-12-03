@@ -36,7 +36,7 @@ gulp.task('less', function() {
 	.pipe(autoprefixer({
             browsers: ['last 20 versions','>1%','ie 9' ],
         }))
-	.pipe(gulp.dest('dist'));
+	.pipe(gulp.dest('dist/style'));
 
 });
 gulp.task('imageMin', () =>
