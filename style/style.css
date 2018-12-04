@@ -56,12 +56,6 @@ input::-webkit-input-placeholder {
   -o-transition: text-indent 0.3s ease;
   transition: text-indent 0.3s ease;
 }
-i[class|="icon"]{
-  font-size: 18px;
-}
-.icon-menu, .icon-cancel{
-  font-size: 32px !important;
-}
 :-moz-placeholder {
   text-indent: 0px;
   -webkit-transition: text-indent 0.3s ease;
@@ -245,8 +239,9 @@ _first {
   width: 30px;
   height: 30px;
   line-height: 30px;
-  font-size: 30px;
+  
 }
+
 .menu .menuLinks .links li a {
   font-size: 24px;
 }
@@ -467,14 +462,11 @@ _first {
           border-radius: 50%;
   left: -10px;
   top: 7px;
-  font-size: 14px;
+  font-size: 13px;
   z-index: 1;
   border: 1px solid #fff;
 }
-.menu__item__icon i {
-  position: relative;
-  top: 2px;
-}
+
 .menu .cart {
   display: none;
   position: absolute;
@@ -665,6 +657,12 @@ _first {
 .tabsSlider .centrBlock a:hover .svgI {
   fill: green;
 }
+i[class*="icon"]{
+  font-size:19px;
+}
+.icon-menu{
+  font-size:36px !important;
+}
 section {
   position: relative;
   z-index: 4;
@@ -675,7 +673,6 @@ section .arrow .slick-arrow {
   position: absolute;
   top: 50%;
   z-index: 12;
-  margin-top: 25px;
   background-color: #FFF;
   opacity: 0.5;
   -webkit-border-radius: 50%;
@@ -684,7 +681,7 @@ section .arrow .slick-arrow {
   border: 1px solid #cccccc;
 }
 section .arrow .slick-arrow i {
-  font-size: 18px;
+  font-size: 24px;
 }
 section .arrow .slick-arrow:hover {
   opacity: 0.9;
@@ -756,6 +753,7 @@ section .stars {
   left: 0;
   font-size: 18px;
 }
+
 section .price {
   position: absolute;
   right: 10%;
@@ -989,11 +987,11 @@ footer .thirdFoot p {
   .menu {
     padding: 0;
   }
-  .icon-cancel{
-    font-size:18px !important;
+  .icon-menu {
+    font-size: 26px !important;
   }
   .menu .phoneNumber {
-    top: 60px;
+    top: 62px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -1005,7 +1003,7 @@ footer .thirdFoot p {
   }
   .menu .searchBlock {
     border-top: 1px solid #cccccc;
-    top: 60px;
+    top: 62px;
     height: 60px;
   }
   .menu .searchBlock span {
@@ -1055,7 +1053,7 @@ footer .thirdFoot p {
             border-radius: 50%;
   }
   .menu__search li {
-    margin: 11px 8px;
+    margin: 15px 8px;
   }
   .menu__search .menuLinks {
     top: 50px;
@@ -1074,10 +1072,10 @@ footer .thirdFoot p {
   }
   .menu__search .menuLinks .links .CloseMenu {
     border: 1px solid;
-    font-size: 16px;
+    font-size: 20px !important;
   }
   .menu__search li:nth-child(1) i {
-    top: -2px;
+    top: 0;
   }
   .menu__user li {
     margin: 15px 8px;
@@ -1091,16 +1089,16 @@ footer .thirdFoot p {
     top: 5px;
   }
   .menu .cart {
-    top: 60px;
+    top: 62px;
   }
   /* slider Carousel */
   .autoplay .slideItem .buyItem,
   .autoplay2 .slideItem .buyItem {
     font-size: 14px;
   }
-  .autoplay .slideItem .stars,
-  .autoplay2 .slideItem .stars {
-    font-size: 8px;
+  .autoplay .slideItem .stars i,
+  .autoplay2 .slideItem .stars i {
+    font-size: 8px !important;
   }
   /* tabs */
   .tabsSlider .tabsBlock {
@@ -1115,7 +1113,7 @@ footer .thirdFoot p {
     -webkit-flex: 1 1;
         -ms-flex: 1 1;
             flex: 1 1;
-    top: 60px;
+    top: 62px;
     height: 540px;
     background: #FFF;
   }
@@ -1155,12 +1153,11 @@ footer .thirdFoot p {
             border-radius: 5px;
     opacity: 0.7;
   }
-  .tabsSlider .categories .icon-search {
+  .tabsSlider .categories .icon-menu{
+    font-size: 18px !important;
     position: relative;
-    left: -12px;
-  }
-  .tabsSlider .categories .icon-menu {
-    font-size: 18px!important;
+    left: 12px;
+    top: -1px;
   }
   .tabsSlider .categories:hover {
     opacity: 1;
@@ -1312,7 +1309,7 @@ footer .thirdFoot p {
     margin: 15px 8px;
   }
   .menu__search li {
-    margin: 11px 8px;
+    margin: 15px 8px;
   }
   .menu__search .menuLinks {
     width: 100%;
@@ -1321,9 +1318,9 @@ footer .thirdFoot p {
   }
   /* cart */
   /* carousel */
-  .autoplay .slideItem .stars,
-  .autoplay2 .slideItem .stars {
-    font-size: 18px;
+  .autoplay .slideItem .stars i,
+  .autoplay2 .slideItem .stars i {
+    font-size: 18px !important;
   }
   /* tabs */
   .tabsSlider .categories {

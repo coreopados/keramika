@@ -179,7 +179,7 @@ $(window).on('resize', function(){
           $('.tabs__tab__back').hide();
           $('.categories').hide();
          }
-});
+})
 
 $('.categories').on('click', function(){
   $('.tabsBlock').show()
