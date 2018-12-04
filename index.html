@@ -6,7 +6,10 @@
 	<title>Document</title>
 	<!-- <link rel="stylesheet/less" type="text/css" href="style.less"> -->
 	<link rel="stylesheet" type="text/css" href="style/style.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" >
+	<link rel="stylesheet" type="text/css" href="style/icons.css">
+	<link rel="stylesheet" type="text/css" href="style/icons-embedded.css">
+	<link rel="stylesheet" type="text/css" href="style/icons-codes.css">
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" > -->
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>	
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
 	<script src="js/less.min.js"></script>
@@ -19,49 +22,49 @@
 				<ul class="menu__search">
 					<li class="menu__item__icon">
 						<a href="#" class="menuButton link_first">
-							<i class="fas fa-bars fa-2x"></i>
+							<i class="icon-menu"></i>
 						</a>
 					</li>
 					<li class="menu__item">
-						<a href="#" class="searchButton link">
-							<i style="transform:rotate(90deg)" class="fas fa-search"></i>
+						<a href="#" style="transform:rotateY(180deg)" class="searchButton link">
+							<i  class="icon-search"></i>
 						</a>
 					</li>
 <!--menu hidden -->					
 						<ul class="menuLinks">
 								<ul class="links">
-									<a href="#" class='CloseMenu'><i class="fas fa-times "></i></a>
+									<a href="#" class='CloseMenu'><i class="icon-cancel "></i></a>
 									<li><a href="#">ГЛАВНАЯ</a></li>
 									<li><a href="#">КАТАЛОГ</a></li>
 									<li><a href="#">О НАС</a></li>
 									<li><a href="#">КОНТАКТЫ</a></li>
 								</ul>
 								<ul>
-									<li><a href="#"><i class="fas fa-user"></i> Мой Аккаунт</a></li>
+									<li><a href="#"><i class="icon-user"></i> Мой Аккаунт</a></li>
 									<li><a href="#">Регистрация</a></li>
 								</ul>	
 								<ul class="socLinks">
-									<li><a href="#" class="link"><i class="fab fa-facebook-f"></i></a></li>
-									<li><a href="#" class="link"><i class="fab fa-youtube"></i></a></li>
-									<li><a href="#" class="link"><i class="fab fa-vk"></i></a></li>	
+									<li><a href="#" class="link"><i class="icon-facebook"></i></a></li>
+									<li><a href="#" class="link"><i class="icon-youtube-play"></i></a></li>
+									<li><a href="#" class="link"><i class="icon-vkontakte"></i></a></li>	
 								</ul>		
 						</ul>
 <!--searchBlock hidden -->	
 						<div class="searchBlock">
-								<a href="#" class="closeRegistration CloseSearch"><i class="fas fa-times fa-2x"></i></a>
+								<a href="#" class="closeRegistration CloseSearch"><i class="icon-cancel"></i></a>
 								<span>Поиск</span>
 								<input type="text">
 								<button class="searchBlock__button">Найти</button>
-								<a href="#" class="searchBlock__button__2"><i style="transform:rotate(90deg)" class="fas fa-search"></i></a>
+								<a href="#" class="searchBlock__button__2"><i style="transform:rotate(90deg)" class="icon-search"></i></a>
 								
 						</div>
 				</ul>
 					<img class="logoMenu" src="img/logo.png" alt="logo">
 <!-- user block -->
 				<ul class="menu__user">
-					<li class="menu__item"><a href="#" class="phone link"><i style="transform:rotate(90deg)" class="fas fa-phone"></i></a></li>
-					<li class="menu__item"><a href="#" class="registrationButton link"><i class="fas fa-user"></i></a></li>
-					<li class="menu__item"><span class="count">1</span><a href="#" class="cartButton link"><i class="fas fa-shopping-cart"></i></a></li>
+					<li class="menu__item"><a href="#" class="phone link"><i style="transform:rotate(90deg)" class="icon-phone"></i></a></li>
+					<li class="menu__item"><a href="#" class="registrationButton link"><i class="icon-user"></i></a></li>
+					<li class="menu__item"><span class="count">0</span><a href="#" class="cartButton link"><i class="icon-basket"></i></a></li>
 				</ul>
 <!--registration hidden block -->				
 					<div class="registration">
@@ -106,7 +109,7 @@
 							</div>
 							<p>Ваза&nbsp;"Клариса"<br/>2439725</p>
 							<span class="priceCart" data-status='1'></span>
-							<a href="#" class="closeRegistration closeCart"><i class="fas fa-times fa-2x"></i></a>
+							<a href="#" class="closeRegistration closeCart"><i class="icon-cancel" style="font-size: 32px"></i></a>
 						</div>
 						<div class="cart__item">
 							<img src="img/9.png" alt="item">
@@ -117,7 +120,7 @@
 							</div>
 							<p>Ваза&nbsp;"Клариса"<br/>2439725</p>
 							<span class="priceCart" data-status='2'></span>
-							<a href="#" class="closeRegistration closePhone"><i class="fas fa-times fa-2x"></i></a>
+							<a href="#" class="closeRegistration closePhone"><i class="icon-cancel" style="font-size: 32px"></i></a>
 						</div>
 						<hr>
 						<span>Итого: </span><span class="result"></span>
@@ -205,7 +208,7 @@
 							</a>
 						</li>
 						<li class="tabs__tab tabs__tab__back">
-							<a href="#"><i class="fas fa-angle-double-left"></i> НАЗАД</a>
+							<a href="#"><i class="icon-angle-double-left"></i> НАЗАД</a>
 						</li>
 					</ul>
 				</div>
@@ -226,7 +229,7 @@
 					<h2>для кухни</h2>
 					<a href="#" class="more">ОЗНАКОМИТСЯ</a>
 				</div>
-				<a href="#" class="categories"><i class="fas fa-bars"></i><i class="fas fa-search"></i> ТОВАРЫ ПО КАТЕГОРИЯМ</a>	
+				<a href="#" class="categories"><i class="icon-menu"></i><i class="icon-search"></i> ТОВАРЫ ПО КАТЕГОРИЯМ</a>	
 			</div>
 		
 	</header>
@@ -238,56 +241,56 @@
 			<div class="autoplay" >
 				<div class="slideItem">
 					<div class="wrap">
-						<i class="fas fa-shopping-cart"></i>
+						<i class="icon-basket"></i>
 						<img src="img/12.png" alt="kuvshin">
 					</div>
 					<a class="buyItem" href="#">Винный кувшин</a>
-					<span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+					<span class="stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></span>
 					<span class="price">112 грн</span>
 				</div>
 				<div class="slideItem">
 					<div class="wrap">
-						<i class="fas fa-shopping-cart"></i>
+						<i class="icon-basket"></i>
 						<img src="img/12.png" alt="kuvshin">
 					</div>
 					<a class="buyItem" href="#">Винный кувшин</a>
-					<span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+					<span class="stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></span>
 					<span class="price">112 грн</span>
 				</div>
 				<div class="slideItem">
 					<div class="wrap">
-						<i class="fas fa-shopping-cart"></i>
+						<i class="icon-basket"></i>
 						<img src="img/12.png" alt="kuvshin">
 					</div>
 					<a class="buyItem" href="#">Винный кувшин<br/>Очень винный кувшин</a>
-					<span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+					<span class="stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></span>
 					<span class="price">112 грн</span>
 				</div>
 				<div class="slideItem">
 					<div class="wrap">
-						<i class="fas fa-shopping-cart"></i>
+						<i class="icon-basket"></i>
 						<img src="img/12.png" alt="kuvshin">
 					</div>
 					<a class="buyItem" href="#">Винный кувшин</a>
-					<span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+					<span class="stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></span>
 					<span class="price">112 грн</span>
 				</div>
 				<div class="slideItem">
 					<div class="wrap">
-						<i class="fas fa-shopping-cart"></i>
+						<i class="icon-basket"></i>
 						<img src="img/12.png" alt="kuvshin">
 					</div>
 					<a class="buyItem" href="#">Винный кувшин</a>
-					<span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+					<span class="stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></span>
 					<span class="price">112 грн</span>
 				</div>
 				<div class="slideItem">
 					<div class="wrap">
-						<i class="fas fa-shopping-cart"></i>
+						<i class="icon-basket"></i>
 						<img src="img/12.png" alt="kuvshin">
 					</div>
 					<a class="buyItem" href="#">Винный кувшин</a>
-					<span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+					<span class="stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></span>
 					<span class="price">112 грн</span>
 				</div>
 			</div>
@@ -334,56 +337,56 @@
 			<div class="autoplay2" >
 				<div class="slideItem">
 					<div class="wrap">
-						<i class="fas fa-shopping-cart"></i>
+						<i class="icon-basket"></i>
 						<img src="img/12.png" alt="kuvshin">
 					</div>
 					<a class="buyItem" href="#">Винный кувшин</a>
-					<span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+					<span class="stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></span>
 					<span class="price">112 грн</span>
 				</div>
 				<div class="slideItem">
 					<div class="wrap">
-						<i class="fas fa-shopping-cart"></i>
+						<i class="icon-basket"></i>
 						<img src="img/12.png" alt="kuvshin">
 					</div>
 					<a class="buyItem" href="#">Винный кувшин</a>
-					<span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+					<span class="stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></span>
 					<span class="price">112 грн</span>
 				</div>
 				<div class="slideItem">
 					<div class="wrap">
-						<i class="fas fa-shopping-cart"></i>
+						<i class="icon-basket"></i>
 						<img src="img/12.png" alt="kuvshin">
 					</div>
 					<a class="buyItem" href="#">Винный кувшин<br/>Очень винный кувшин</a>
-					<span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+					<span class="stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></span>
 					<span class="price">112 грн</span>
 				</div>
 				<div class="slideItem">
 					<div class="wrap">
-						<i class="fas fa-shopping-cart"></i>
+						<i class="icon-basket"></i>
 						<img src="img/12.png" alt="kuvshin">
 					</div>
 					<a class="buyItem" href="#">Винный кувшин</a>
-					<span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+					<span class="stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></span>
 					<span class="price">112 грн</span>
 				</div>
 				<div class="slideItem">
 					<div class="wrap">
-						<i class="fas fa-shopping-cart"></i>
+						<i class="icon-basket"></i>
 						<img src="img/12.png" alt="kuvshin">
 					</div>
 					<a class="buyItem" href="#">Винный кувшин</a>
-					<span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+					<span class="stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></span>
 					<span class="price">112 грн</span>
 				</div>
 				<div class="slideItem">
 					<div class="wrap">
-						<i class="fas fa-shopping-cart"></i>
+						<i class="icon-basket"></i>
 						<img src="img/12.png" alt="kuvshin">
 					</div>
 					<a class="buyItem" href="#">Винный кувшин</a>
-					<span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+					<span class="stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></span>
 					<span class="price">112 грн</span>
 				</div>
 			</div>
@@ -401,9 +404,9 @@
 				<div>
 					<h3>Подпишитесь на нас</h3>
 					<ul class="socLinks">
-						<li><a href="#" class="link"><i class="fab fa-facebook-f"></i></a></li>
-						<li><a href="#" class="link"><i class="fab fa-youtube"></i></a></li>
-						<li><a href="#" class="link"><i class="fab fa-vk"></i></a></li>
+						<li><a href="#" class="link"><i class="icon-facebook"></i></a></li>
+						<li><a href="#" class="link"><i class="icon-youtube-play"></i></a></li>
+						<li><a href="#" class="link"><i class="icon-vkontakte"></i></a></li>
 					</ul>
 				</div>
 				<div class='logoImg'>
@@ -413,7 +416,7 @@
 					<h3>Подпишитесь<br/> на нашу рассылку</h3>
 					<form action="#">
 						<input type="search" placeholder="Ваш Email">
-						<button type="submit"><i class="fas fa-angle-right fa-2x"></i></button>
+						<button type="submit"><i class="icon-right-open"></i></button>
 					</form>
 				</div>
 			</div>

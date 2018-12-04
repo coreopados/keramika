@@ -45,4 +45,4 @@ gulp.task('imageMin', () =>
         .pipe(gulp.dest('dist/img'))
 );
 // default
-gulp.task('default', ['less', 'connect','imageMin', 'copy:libs', 'build'] )
+gulp.task('default', ['less', 'connect','imageMin'] )
